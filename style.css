@@ -1,0 +1,281 @@
+/* style.css - Modern, Unique & Clean Forest Theme */
+
+:root {
+    --primary: #061311;    /* Deep Forest Background */
+    --accent: #10B981;     /* Emerald Accent */
+    --secondary: #0F2924;  /* Dark Pine Cards/Inputs */
+    --highlight: #FDE047;  /* Yellow Highlight */
+    --text: #e2e8f0;
+    --glass: rgba(16, 185, 129, 0.1);
+}
+
+/* 1. Global Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--primary);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 2. Navigation Fix (Prevents Doubling) */
+.navbar {
+    background: rgba(6, 19, 17, 0.95);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.logo-img {
+    height: 40px;
+    filter: drop-shadow(0 0 5px var(--accent));
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent);
+}
+
+/* IMPORTANT: Mobile menu hidden by default on desktop */
+.mobile-menu, .burger { display: none; }
+
+/* 3. Hero Section */
+.hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: var(--highlight);
+    text-shadow: 0 0 20px rgba(253, 224, 71, 0.3);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow { 
+    from { text-shadow: 0 0 10px rgba(253, 224, 71, 0.4); } 
+    to { text-shadow: 0 0 20px rgba(253, 224, 71, 0.7); } 
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    max-width: 550px;
+    margin-bottom: 2.5rem;
+}
+
+.hero-buttons { display: flex; gap: 1.5rem; }
+
+/* 4. Shared Button Styles */
+.btn-primary, .btn-secondary {
+    padding: 14px 32px;
+    border-radius: 9999px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary { background: var(--accent); color: var(--primary); }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3); }
+
+.btn-secondary { border: 2px solid var(--accent); color: var(--accent); }
+.btn-secondary:hover { background: var(--accent); color: var(--primary); }
+
+/* 5. Search Components */
+.search-container { position: relative; width: 280px; }
+
+#global-search {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: var(--secondary);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: white;
+    outline: none;
+}
+
+.search-dropdown {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--secondary);
+    border-radius: 16px;
+    margin-top: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    display: none;
+    z-index: 50;
+}
+
+/* 6. Blog Component Styles */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.blog-card {
+    background: var(--secondary);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid var(--glass);
+    position: relative;
+}
+
+.blog-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.blog-card img { width: 100%; height: 220px; object-fit: cover; }
+
+.blog-content { padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; }
+
+.blog-card h3 { font-size: 1.5rem; color: #fff; margin-bottom: 0.75rem; }
+
+.excerpt { 
+    color: #94a3b8; 
+    font-size: 1rem; 
+    margin-bottom: 1.5rem; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+}
+
+.see-full {
+    margin-top: auto;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.see-full:hover { color: var(--highlight); gap: 12px; }
+
+/* 7. Modal System */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(6, 19, 17, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: var(--secondary);
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 24px;
+    padding: 3rem;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px; right: 20px;
+    font-size: 2rem;
+    background: none; border: none; color: white;
+    cursor: pointer;
+}
+
+/* 8. Footer */
+.footer {
+    padding: 4rem 0;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--glass);
+}
+
+/* 9. Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-links, .search-container { display: none; }
+    
+    .burger { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 5px; 
+        cursor: pointer; 
+    }
+    
+    .burger span { width: 28px; height: 3px; background: white; }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: var(--secondary);
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        padding: 1.5rem;
+        border-bottom: 2px solid var(--accent);
+    }
+
+    .mobile-menu.active { display: flex; }
+    
+    .mobile-menu a {
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .hero-content h1 { font-size: 2.8rem; }
+}
+
+
