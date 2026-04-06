@@ -76,7 +76,7 @@ const blogs = [
 
         <h3>Effect Of War On Practical Education</h3>
         <p>These closures have had a significant impact on our academic progress, particularly regarding practical study. In engineering, hands-on lab work is irreplaceable; losing weeks of access to equipment and collaborative environments stalls the momentum of learning. It is a stark reminder that as students, we do not live in a vacuum—global events have a tangible, often disruptive, effect on our education and our future.</p>
-
+ `
 },
 ];
 
