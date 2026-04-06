@@ -1,64 +1,50 @@
 const blogs = [
     {
     id: 1,
-    title: "My First Steps into Web Development",
-    date: "April 1, 2026",
+    title: "My Achievement In First Semester ",
+    date: "April 6, 2026",
     category: "Technology",
-    tags: ["web-dev",],
-    excerpt: "How I built my very first responsive website as a CS student in Faisalabad.",
+    tags: ["Mechine-Learning",],
+    excerpt: "How I built my very first Mechine Learning Model In Uet.",
     content: `
-        <h1>My First Steps into Web Development</h1>
-        <p class="date">April 1, 2026 • Technology</p>
+        <h1>Python and My First Logical Steps</h1>
+        <p class="date">April 6, 2026 • Technology</p>
         
-        <p>It all started with a simple HTML file during a boring lecture at university. While everyone else was taking notes on theory, I was obsessed with making a "Hello World" text turn blue and move to the center of my screen.</p>
+        <p>Stepping into the first semester of my Computer Engineering degree felt like entering a whole new world. The highlight was undoubtedly diving into Python. What started as learning basic syntax quickly evolved into building logic-driven projects. I began with the fundamentals, creating a Simple Bank System and a Calculator—tasks that taught me how to handle user input and manage data flow effectively.</p>
 
-        <h3>The Spark</h3>
+        <h3>The Mechine Learning</h3>
         <p>Living in Faisalabad, I realized that many local businesses didn't have a digital presence. I decided that my first project shouldn't just be a tutorial clone—it should be something real. I spent 48 hours straight (fueled by plenty of Chai) learning how CSS Flexbox actually works.</p>
 
         <h3>The Tech Stack</h3>
-        <p>For this first project, I kept it lean and mean:</p>
-        <ul>
-            <li><strong>HTML5:</strong> Semantic tags for better SEO.</li>
-            <li><strong>CSS3:</strong> Custom properties and media queries for responsiveness.</li>
-            <li><strong>JavaScript:</strong> Just a tiny bit for a mobile toggle menu.</li>
-        </ul>
-
+        <p>However, the real excitement began when I explored Machine Learning. I developed a predictive model to analyze Walmart sales data, specifically focusing on how seasonal holidays influence consumer behavior. It was fascinating to see how historical data can predict future trends, and this experience solidified my interest in data science and its practical applications in the real world.</p>
+        
         <blockquote>
             "The best way to learn is to build something that breaks, and then figure out why."
         </blockquote>
 
         <h3>Major Challenges</h3>
-        <p>The hardest part wasn't the code; it was making the site look good on my phone. I learned the 'Mobile First' approach the hard way after having to rewrite my CSS three times!</p>
+        <p>The hardest part wasn't the code: it was the logic building.</p>
 
-        <h3>Final Thoughts</h3>
-        <p>Two days later, I had a fully responsive site deployed. Lessons learned: Start small, don't get stuck in 'tutorial hell', and just ship it! If you're a student like me, stop waiting for the perfect idea and just start coding.</p>
+        <h3>What I Learnt</h3>
+        <p>From mastering the logic of code to navigating the challenges of global disruption, this journey has taught me that true engineering is about adapting skills to solve problems in any environment.</p>
     `
 },
     {
     id: 2,
-    title: "Balancing University Life and Side Projects",
-    date: "March 20, 2026",
-    category: "Lifestyle",
-    tags: ["student-life"],
-    excerpt: "How I manage 18 credit hours, cricket, and still ship side projects every month.",
+    title: "Building Full-Stack Solutions with SQL",
+    date: "Aprial 06, 2026",
+    category: "Develepement",
+    tags: ["database"],
+    excerpt: "How I complete The Project Of Database",
     content: `
-        <h1>Balancing University Life and Side Projects</h1>
-        <p class="date">March 20, 2026 • Lifestyle</p>
+        <h1>Building Full-Stack Solutions with SQL</h1>
+        <p class="date">Aprial 06, 2026 • Lifestyle</p>
 
-        <p>Being a Computer Science student is a full-time job. Between 18 credit hours of lectures, lab assignments, and the occasional cricket match with friends, finding time to build side projects can feel impossible. But I believe "shipping" code is just as important as your GPA.</p>
+        <p>In my second semester, the focus shifted from standalone scripts to interconnected systems. I mastered SQL and database management, which allowed me to understand how information is stored and retrieved at scale. This knowledge was put to the test when I built a Printing Management System website.</p>
 
-        <h3>The 'Maghrib to Isha' Rule</h3>
-        <p>My secret isn't working 10 hours a day. It's working 2 focused hours every single night. In Faisalabad, once the sun sets and Maghrib prayer is over, the city settles down. That is my deep-work window.</p>
+        <h3>The 'What Is The Main Idea Of My Project?</h3>
+        <p>This project was a complete end-to-end solution: I designed a database where users could upload their files, which I then processed and printed. Building this taught me the importance of backend stability and user experience. Seeing a digital file transition into a physical document through a system I built from scratch was incredibly rewarding and showed me the power of web development in solving everyday campus challenges.</p>
         
-        <ul>
-            <li><strong>No Phone:</strong> My phone goes in the other room.</li>
-            <li><strong>Single Task:</strong> I don't "code"—I solve one specific bug or build one specific component.</li>
-            <li><strong>The Notion Dashboard:</strong> I keep a simple 'Brain Dump' list so I don't waste time wondering what to work on.</li>
-        </ul>
-
-        <h3>Maintaining the Social Life</h3>
-        <p>You can't code 24/7 without burning out. I make sure to keep my Friday evenings strictly for family and cricket. It recharges my brain so I can tackle complex algorithms on Monday morning.</p>
-
         <blockquote>
             "Productivity isn't about doing more things; it's about doing the right things consistently."
         </blockquote>
@@ -77,40 +63,20 @@ const blogs = [
 },
     {
     id: 3,
-    title: "Why Every Student Should Learn AI Basics in 2026",
-    date: "April 5, 2026",
+    title: "Education Under Shadow – The Impact of Global Conflict",
+    date: "April 6, 2026",
     category: "Technology",
-    tags: ["ai"],
-    excerpt: "AI is no longer a buzzword. It's the new electricity — students must start now.",
+    tags: ["War"],
+    excerpt: "What is the effect of war on education.",
     content: `
-        <h1>Why Every Student Should Learn AI Basics in 2026</h1>
-        <p class="date">April 5, 2026 • Technology</p>
+        <h1>US,Isrial and Iran War Effects </h1>
+        <p class="date">April 6, 2026 • Technology</p>
 
-        <p>We are living in an era where AI is no longer a "future" concept—it's the foundation of modern infrastructure. Just as previous generations had to learn how to use a computer, our generation must learn how to collaborate with AI agents to stay relevant.</p>
+        <p>My third blog entry is more somber, focusing on how global geopolitics directly affect our local lives. The escalating conflict involving the US, Israel, and Iran has sent ripples far beyond their borders, reaching even our lecture halls here in Pakistan. Due to the resulting regional instability and security concerns, our university was forced to close for 20 days.</p>
 
-        <h3>Beyond the Chatbot</h3>
-        <p>Many students make the mistake of thinking AI is just ChatGPT. In 2026, the landscape has shifted toward <strong>AI Agents</strong>—programs that don't just talk, but actually perform tasks like booking appointments, writing tests, or analyzing large datasets automatically.</p>
+        <h3>Effect Of War On Practical Education</h3>
+        <p>These closures have had a significant impact on our academic progress, particularly regarding practical study. In engineering, hands-on lab work is irreplaceable; losing weeks of access to equipment and collaborative environments stalls the momentum of learning. It is a stark reminder that as students, we do not live in a vacuum—global events have a tangible, often disruptive, effect on our education and our future.</p>
 
-        <blockquote>
-            "AI won't replace you, but a person using AI will."
-        </blockquote>
-
-        <h3>Where to Start?</h3>
-        <p>You don't need a PhD in Mathematics to start. Here is my recommended roadmap for any student in Faisalabad or beyond:</p>
-        <ul>
-            <li><strong>Master Prompt Engineering:</strong> Learn how to give precise instructions to get high-quality outputs.</li>
-            <li><strong>Understand the Ethics:</strong> Learn about bias and data privacy so you can use these tools responsibly.</li>
-            <li><strong>Build a 'Wrapper':</strong> Try using APIs to connect an AI model to a simple website (like this blog!).</li>
-        </ul>
-
-        <h3>The "New Electricity"</h3>
-        <p>Think of AI as the new electricity. It will power every industry, from the textile mills here in Faisalabad to the global tech hubs in Silicon Valley. If you can understand the basics now, you'll be the one building the systems of tomorrow.</p>
-
-        <h3>My Personal AI Workflow</h3>
-        <p>I use AI every day to help me debug my JavaScript code and summarize long academic papers. It saves me roughly 10 hours a week—time I can spend on cricket or working on my next side project!</p>
-
-        <p>The tools are free, and the tutorials are everywhere. Don't wait for your university to add it to the curriculum—start building today.</p>
-    `
 },
 ];
 
