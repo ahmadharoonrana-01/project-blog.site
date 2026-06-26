@@ -78,6 +78,24 @@ const blogs = [
         <p>These closures have had a significant impact on our academic progress, particularly regarding practical study. In engineering, hands-on lab work is irreplaceable; losing weeks of access to equipment and collaborative environments stalls the momentum of learning. It is a stark reminder that as students, we do not live in a vacuum—global events have a tangible, often disruptive, effect on our education and our future.</p>
  `
 },
+
+    {
+    id: 3,
+    title: "Education Under Shadow – The Impact of Global Conflict",
+    date: "April 6, 2026",
+    category: "Technology",
+    tags: ["War"],
+    excerpt: "What is the effect of war on education.",
+    content: `
+        <h1>US,Isrial and Iran War Effects </h1>
+        <p class="date">April 6, 2026 • Technology</p>
+
+        <p>My third blog entry is more somber, focusing on how global geopolitics directly affect our local lives. The escalating conflict involving the US, Israel, and Iran has sent ripples far beyond their borders, reaching even our lecture halls here in Pakistan. Due to the resulting regional instability and security concerns, our university was forced to close for 20 days.</p>
+
+        <h3>Effect Of War On Practical Education</h3>
+        <p>These closures have had a significant impact on our academic progress, particularly regarding practical study. In engineering, hands-on lab work is irreplaceable; losing weeks of access to equipment and collaborative environments stalls the momentum of learning. It is a stark reminder that as students, we do not live in a vacuum—global events have a tangible, often disruptive, effect on our education and our future.</p>
+ `
+},
 ];
 
 // Render blogs function
